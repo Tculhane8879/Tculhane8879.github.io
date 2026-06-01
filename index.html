@@ -132,5 +132,40 @@
       <p>Email me at <a href="mailto:thomasculhane95@gmail.com">thomasculhane95@gmail.com</a>.</p>
     </section>
   </main>
+  <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close enlarged screenshot">&times;</button>
+    <img src="" alt="" />
+  </div>
+  <script>
+    const lightbox = document.getElementById("image-lightbox");
+    const lightboxImage = lightbox.querySelector("img");
+    const closeLightbox = () => {
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImage.src = "";
+      lightboxImage.alt = "";
+    };
+
+    document.querySelectorAll(".project-screenshots img").forEach((image) => {
+      image.addEventListener("click", () => {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox || event.target.classList.contains("lightbox-close")) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
+        closeLightbox();
+      }
+    });
+  </script>
 </body>
 </html>
