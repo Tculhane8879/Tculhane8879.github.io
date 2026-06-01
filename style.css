@@ -57,6 +57,12 @@ section {
   margin: 1rem 0;
 }
 
+.project-screenshots a {
+  display: block;
+  border-radius: 8px;
+  line-height: 0;
+}
+
 .project-screenshots img {
   display: block;
   width: 100%;
