@@ -9,8 +9,9 @@
 <body>
   <header>
     <h1>Thomas Culhane</h1>
-    <p>Recent CS graduate and aspiring software engineer.</p>
-    <p>
+    <p class="tagline">Software engineer interested in building useful systems, learning quickly, and solving real problems with code.</p>
+    <p class="header-links">
+      <a href="#projects">Projects</a> |
       <a href="https://github.com/Tculhane8879">GitHub</a> |
       <a href="https://www.linkedin.com/in/thomas-culhane-sdsu">LinkedIn</a> |
       <a href="mailto:thomasculhane95@gmail.com">Email</a>
@@ -21,63 +22,72 @@
     <section>
       <h2>About</h2>
       <p>
-        I am a recent Computer Science graduate interested in software engineering,
-        backend systems, AI, and building practical tools. I enjoy working on projects
-        that combine strong technical design with real-world usefulness.
+        I am a recent Computer Science graduate who likes building practical software
+        with a clear user workflow, reliable backend behavior, and enough polish to be
+        useful outside the classroom. My strongest work combines full-stack development,
+        API design, data persistence, testing, and deployment.
+      </p>
+      <p>
+        I am currently seeking entry-level software engineering opportunities where I can
+        contribute, try new things, and grow as an engineer. I am especially
+        interested in backend, full-stack, and applied AI work, but I am excited to
+        learn wherever useful software is being built.
       </p>
     </section>
 
     <section class="featured-project">
+      <h2>Featured Project</h2>
+      <h3>Course + Work Schedule Optimizer</h3>
 
-    <h2>Featured Project</h2>
+      <p>
+        A full-stack scheduling application that helps students generate, compare,
+        and save optimized course and work schedules based on class sections,
+        availability constraints, and personal preferences.
+      </p>
 
-    <h3>Course + Work Schedule Optimizer</h3>
+      <div class="case-study-grid">
+        <div>
+          <h4>What I Built</h4>
+          <ul>
+            <li>Vue workflow for managing courses, sections, constraints, and saved schedules</li>
+            <li>Weekly calendar views for comparing ranked schedule options</li>
+            <li>Saved schedule comparison flow for reviewing tradeoffs</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Engineering Highlights</h4>
+          <ul>
+            <li>Spring Boot REST API organized around domain services and repositories</li>
+            <li>Constraint-based schedule generation with conflict detection and scoring</li>
+            <li>PostgreSQL persistence with Flyway migrations and OpenAPI documentation</li>
+          </ul>
+        </div>
+      </div>
 
-    <p>
-    A full-stack scheduling application that helps students generate, compare,
-    and save optimized course and work schedules based on class sections,
-    availability constraints, and personal preferences.
-    </p>
+      <p>
+        <strong>Skills:</strong> Vue 3 &bull; Spring Boot &bull; PostgreSQL &bull; Docker &bull; OpenAPI &bull; CI/CD &bull; Full-Stack Development
+      </p>
 
-    <ul>
+      <div class="project-screenshots" aria-label="Course + Work Schedule Optimizer screenshots">
+        <a href="images/cws-course-management.png">
+          <img src="images/cws-course-management.png" alt="Course management screen" loading="lazy" />
+        </a>
+        <a href="images/cws-constraints.png">
+          <img src="images/cws-constraints.png" alt="Constraints and preferences screen" loading="lazy" />
+        </a>
+        <a href="images/cws-generated-schedules.png">
+          <img src="images/cws-generated-schedules.png" alt="Generated schedules screen" loading="lazy" />
+        </a>
+        <a href="images/cws-saved-schedules.png">
+          <img src="images/cws-saved-schedules.png" alt="Saved schedules comparison screen" loading="lazy" />
+        </a>
+      </div>
 
-    <li>Vue workflow for managing courses, sections, constraints, and saved schedules</li>
-
-    <li>Spring Boot REST API organized around domain services and repositories</li>
-
-    <li>Constraint-based schedule generation with conflict detection and scoring</li>
-
-    <li>PostgreSQL persistence with Flyway migrations and OpenAPI documentation</li>
-
-    <li>Hosted demo deployed with Vercel, Render, and Neon</li>
-
-    </ul>
-
-    <p>
-      <strong>Skills:</strong> Vue 3 • Spring Boot • PostgreSQL • Docker • OpenAPI • CI/CD • Full-Stack Development
-    </p>
-
-    <div class="project-screenshots" aria-label="Course + Work Schedule Optimizer screenshots">
-      <a href="images/cws-course-management.png">
-        <img src="images/cws-course-management.png" alt="Course management screen" loading="lazy" />
-      </a>
-      <a href="images/cws-constraints.png">
-        <img src="images/cws-constraints.png" alt="Constraints and preferences screen" loading="lazy" />
-      </a>
-      <a href="images/cws-generated-schedules.png">
-        <img src="images/cws-generated-schedules.png" alt="Generated schedules screen" loading="lazy" />
-      </a>
-      <a href="images/cws-saved-schedules.png">
-        <img src="images/cws-saved-schedules.png" alt="Saved schedules comparison screen" loading="lazy" />
-      </a>
-    </div>
-
-    <p class="project-links">
-      <a href="https://course-work-scheduler.vercel.app" target="_blank">Live Demo →</a>
-      <a href="https://github.com/Tculhane8879/course-work-scheduler" target="_blank">GitHub →</a>
-      <a href="https://course-work-scheduler-api.onrender.com/swagger-ui.html" target="_blank">Swagger API →</a>
-    </p>
-
+      <p class="project-links">
+        <a href="https://course-work-scheduler.vercel.app" target="_blank">Live Demo &rarr;</a>
+        <a href="https://github.com/Tculhane8879/course-work-scheduler" target="_blank">GitHub &rarr;</a>
+        <a href="https://course-work-scheduler-api.onrender.com/swagger-ui.html" target="_blank">Swagger API &rarr;</a>
+      </p>
     </section>
 
     <section id="projects">
@@ -91,7 +101,7 @@
           engagement metrics.
         </p>
         <p>
-          <strong>Skills:</strong> Python • Flask • Speech Processing • ASR • Machine Learning • Testing
+          <strong>Skills:</strong> Python &bull; Flask &bull; Speech Processing &bull; ASR &bull; Machine Learning &bull; Testing
         </p>
         <div class="project-screenshots" aria-label="Speech-Aware Meeting Summarizer screenshots">
           <a href="images/sams1.png">
@@ -106,7 +116,7 @@
         </div>
         <p>
           <a href="https://github.com/Tculhane8879/Speech-Aware-Meeting-Summarizer" target="_blank">
-            View Project →
+            View Project &rarr;
           </a>
         </p>
       </div>
@@ -118,7 +128,7 @@
           system design, backend development, and frontend integration.
         </p>
         <p>
-          <strong>Skills:</strong> Java • Vue • TypeScript • Full-Stack Development • System Design
+          <strong>Skills:</strong> Java &bull; Vue &bull; TypeScript &bull; Full-Stack Development &bull; System Design
         </p>
         <div class="project-screenshots" aria-label="NetworkAnalyzer screenshots">
           <a href="images/nan1.png">
@@ -136,7 +146,7 @@
         </div>
         <p>
           <a href="https://github.com/Conava/NetworkAnalyzer" target="_blank">
-            View Project →
+            View Project &rarr;
           </a>
         </p>
       </div>
@@ -148,7 +158,7 @@
           techniques.
         </p>
         <p>
-          <strong>Skills:</strong> Python • Machine Learning • Computer Vision • Image Classification
+          <strong>Skills:</strong> Python &bull; Machine Learning &bull; Computer Vision &bull; Image Classification
         </p>
       </div>
     </section>
@@ -166,10 +176,12 @@
       <p>Email me at <a href="mailto:thomasculhane95@gmail.com">thomasculhane95@gmail.com</a>.</p>
     </section>
   </main>
+
   <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
     <button class="lightbox-close" type="button" aria-label="Close enlarged screenshot">&times;</button>
     <img src="" alt="" />
   </div>
+
   <script>
     const lightbox = document.getElementById("image-lightbox");
     const lightboxImage = lightbox.querySelector("img");
