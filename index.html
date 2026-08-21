@@ -3,177 +3,242 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thomas Culhane — software engineer building reliable full-stack systems with thoughtful backend design, data modeling, testing, and polished user experiences." />
   <title>Thomas Culhane | Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Thomas Culhane</h1>
-    <p class="tagline">Software engineer interested in building useful systems, learning quickly, and solving real problems with code.</p>
-    <p class="header-links">
-      <a href="#featured-project">Projects</a> |
-      <a href="https://github.com/Tculhane8879">GitHub</a> |
-      <a href="https://www.linkedin.com/in/thomas-culhane-sdsu">LinkedIn</a> |
-      <a href="mailto:thomasculhane95@gmail.com">Email</a>
-    </p>
+    <div class="header-inner">
+      <p class="eyebrow">Software Engineer</p>
+      <h1>Thomas Culhane</h1>
+      <p class="tagline">
+        I build reliable full-stack systems with thoughtful backend behavior,
+        practical data models, and polished user workflows.
+      </p>
+      <nav class="header-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/Tculhane8879" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/thomas-culhane-sdsu" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:thomasculhane95@gmail.com">Email</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>About</h2>
-      <p>
-        I am a recent Computer Science graduate who likes building practical software
-        with a clear user workflow, reliable backend behavior, and enough polish to be
-        useful outside the classroom. My strongest work combines full-stack development,
-        API design, data persistence, testing, and deployment.
-      </p>
-      <p>
-        I am currently seeking entry-level software engineering opportunities where I can
-        contribute, try new things, and grow as an engineer. I am especially
-        interested in backend, full-stack, and applied AI work, but I am excited to
-        learn wherever useful software is being built.
-      </p>
+    <section class="intro-section">
+      <div class="section-label">About</div>
+      <div class="intro-copy">
+        <h2>Building practical systems with strong backend foundations.</h2>
+        <p>
+          I am a recent Computer Science graduate focused on backend and full-stack
+          engineering. I enjoy building useful software where correctness matters:
+          API boundaries, relational data, concurrency, migrations, testing, and the
+          details that make a product reliable in real use.
+        </p>
+        <p>
+          I am currently seeking entry-level software engineering opportunities where
+          I can contribute to production-minded systems, learn quickly, and grow with
+          an experienced engineering team.
+        </p>
+      </div>
     </section>
 
-    <section class="featured-project" id="featured-project">
-      <h2>Featured Project</h2>
-      <h3>Course + Work Schedule Optimizer</h3>
+    <section class="featured-project" id="projects">
+      <div class="project-kicker">Featured Project · v1.0.0 Released</div>
+      <div class="featured-heading">
+        <div>
+          <h2>ApplyGauge</h2>
+          <p class="project-subtitle">Job Search Intelligence Platform</p>
+        </div>
+        <a class="text-link" href="https://github.com/Tculhane8879/applygauge" target="_blank" rel="noreferrer">
+          View GitHub →
+        </a>
+      </div>
 
-      <p>
-        A full-stack scheduling application that helps students generate, compare,
-        and save optimized course and work schedules based on class sections,
-        availability constraints, and personal preferences.
+      <p class="project-lede">
+        A full-stack platform for tracking job opportunities and application progress,
+        with deterministic skill extraction and technology-demand analytics across saved
+        job postings.
       </p>
 
-      <div class="case-study-grid">
+      <div class="case-study-grid featured-grid">
         <div>
-          <h4>What I Built</h4>
+          <h3>What it does</h3>
           <ul>
-            <li>Vue workflow for managing courses, sections, constraints, and saved schedules</li>
-            <li>Weekly calendar views for comparing ranked schedule options</li>
-            <li>Saved schedule comparison flow for reviewing tradeoffs</li>
+            <li>Tracks user-owned companies, jobs, statuses, and immutable status history</li>
+            <li>Extracts canonical technologies from job descriptions with visible provenance</li>
+            <li>Surfaces current opportunity metrics and ranked technology demand</li>
           </ul>
         </div>
         <div>
-          <h4>Engineering Highlights</h4>
+          <h3>Engineering depth</h3>
           <ul>
-            <li>Spring Boot REST API organized around domain services and repositories</li>
-            <li>Constraint-based schedule generation with conflict detection and scoring</li>
-            <li>PostgreSQL persistence with Flyway migrations and OpenAPI documentation</li>
+            <li>Concurrency-safe status transitions with PostgreSQL row locking</li>
+            <li>Deterministic extraction, aliases, provenance, and durable false-positive suppression</li>
+            <li>467 automated tests plus migration drift checks, CI gates, and real PostgreSQL integration testing</li>
           </ul>
         </div>
       </div>
 
-      <p>
-        <strong>Skills:</strong> Vue 3 &bull; Spring Boot &bull; PostgreSQL &bull; Docker &bull; OpenAPI &bull; CI/CD &bull; Full-Stack Development
+      <div class="architecture-strip" aria-label="ApplyGauge architecture">
+        <span>Next.js</span>
+        <span aria-hidden="true">→</span>
+        <span>FastAPI</span>
+        <span aria-hidden="true">→</span>
+        <span>PostgreSQL</span>
+        <span class="architecture-note">Supabase Auth for identity</span>
+      </div>
+
+      <p class="skills-line">
+        <strong>Stack:</strong>
+        TypeScript · Next.js · React · Python · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Supabase Auth · Docker · GitHub Actions
       </p>
 
-      <div class="project-screenshots" aria-label="Course + Work Schedule Optimizer screenshots">
-        <a href="images/cws-course-management.png">
-          <img src="images/cws-course-management.png" alt="Course management screen" loading="lazy" />
+      <div class="project-screenshots featured-screenshots" aria-label="ApplyGauge screenshots">
+        <a href="images/applygauge-dashboard.png">
+          <img src="images/applygauge-dashboard.png" alt="ApplyGauge dashboard with opportunity analytics and skill demand" loading="lazy" />
         </a>
-        <a href="images/cws-constraints.png">
-          <img src="images/cws-constraints.png" alt="Constraints and preferences screen" loading="lazy" />
+        <a href="images/applygauge-jobs.png">
+          <img src="images/applygauge-jobs.png" alt="ApplyGauge jobs list" loading="lazy" />
         </a>
-        <a href="images/cws-generated-schedules.png">
-          <img src="images/cws-generated-schedules.png" alt="Generated schedules screen" loading="lazy" />
+        <a href="images/applygauge-job-detail.png">
+          <img src="images/applygauge-job-detail.png" alt="ApplyGauge job detail with status, skills, and history" loading="lazy" />
         </a>
-        <a href="images/cws-saved-schedules.png">
-          <img src="images/cws-saved-schedules.png" alt="Saved schedules comparison screen" loading="lazy" />
+        <a href="images/applygauge-insights.png">
+          <img src="images/applygauge-insights.png" alt="ApplyGauge technology demand insights" loading="lazy" />
         </a>
       </div>
 
-      <p class="project-links">
-        <a href="https://course-work-scheduler.vercel.app" target="_blank">Live Demo &rarr;</a>
-        <a href="https://github.com/Tculhane8879/course-work-scheduler" target="_blank">GitHub &rarr;</a>
-        <a href="https://course-work-scheduler-api.onrender.com/swagger-ui.html" target="_blank">Swagger API &rarr;</a>
-      </p>
+      <div class="project-links">
+        <a href="https://github.com/Tculhane8879/applygauge" target="_blank" rel="noreferrer">GitHub Repository →</a>
+      </div>
+      <p class="release-note">Released portfolio project. No public deployment is currently available.</p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <section class="projects-section">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">Selected Work</div>
+          <h2>More Projects</h2>
+        </div>
+      </div>
 
-      <div class="project">
-        <h3>Speech-Aware Meeting Summarizer</h3>
+      <article class="project">
+        <div class="project-header">
+          <div>
+            <h3>Course + Work Schedule Optimizer</h3>
+            <p class="project-subtitle">Constraint-based scheduling application</p>
+          </div>
+          <div class="project-header-links">
+            <a href="https://course-work-scheduler.vercel.app" target="_blank" rel="noreferrer">Live Demo ↗</a>
+            <a href="https://github.com/Tculhane8879/course-work-scheduler" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
         <p>
-          Built a speech-aware meeting analysis system that generates enriched meeting summaries
-          using transcription, speaker diarization, prosody analysis, topic segmentation, and
-          engagement metrics.
+          Full-stack application that generates and ranks course schedules from class
+          sections, work availability, and user preferences, then lets users compare and
+          save viable options.
         </p>
+
+        <ul class="compact-highlights">
+          <li>Constraint-based generation with conflict detection and schedule scoring</li>
+          <li>Spring Boot REST API with PostgreSQL, Flyway migrations, and OpenAPI</li>
+          <li>Vue interface for course management, constraints, ranked schedules, and saved comparisons</li>
+        </ul>
+
+        <p class="skills-line">
+          <strong>Stack:</strong> Java · Spring Boot · PostgreSQL · Vue 3 · Docker · Flyway · OpenAPI · GitHub Actions
+        </p>
+
+        <div class="project-screenshots" aria-label="Course + Work Schedule Optimizer screenshots">
+          <a href="images/cws-course-management.png">
+            <img src="images/cws-course-management.png" alt="Course management screen" loading="lazy" />
+          </a>
+          <a href="images/cws-generated-schedules.png">
+            <img src="images/cws-generated-schedules.png" alt="Generated ranked schedules screen" loading="lazy" />
+          </a>
+          <a href="images/cws-saved-schedules.png">
+            <img src="images/cws-saved-schedules.png" alt="Saved schedules comparison screen" loading="lazy" />
+          </a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-header">
+          <div>
+            <h3>Speech-Aware Meeting Summarizer</h3>
+            <p class="project-subtitle">Speech processing and meeting analysis pipeline</p>
+          </div>
+          <div class="project-header-links">
+            <a href="https://github.com/Tculhane8879/Speech-Aware-Meeting-Summarizer" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
         <p>
-          <strong>Skills:</strong> Python &bull; Flask &bull; Speech Processing &bull; ASR &bull; Machine Learning &bull; Testing
+          Modular meeting-analysis pipeline combining speech-to-text, speaker-aware
+          processing, topic segmentation, prosody signals, and structured summaries to
+          make long recordings easier to review.
         </p>
+
+        <ul class="compact-highlights">
+          <li>Integrated transcription, speaker-aware analysis, segmentation, and summarization stages</li>
+          <li>Built reusable pipeline components for iterative quality improvements</li>
+          <li>Visualized speaker timelines and conversation-flow behavior in a web interface</li>
+        </ul>
+
+        <p class="skills-line">
+          <strong>Stack:</strong> Python · Flask · Speech Processing · Machine Learning · ASR · Testing
+        </p>
+
         <div class="project-screenshots" aria-label="Speech-Aware Meeting Summarizer screenshots">
           <a href="images/sams1.png">
-            <img src="images/sams1.png" alt="Speech-Aware Meeting Summarizer screenshot 1" loading="lazy" />
+            <img src="images/sams1.png" alt="Meeting Summarizer analysis and summary interface" loading="lazy" />
           </a>
           <a href="images/sams2.png">
-            <img src="images/sams2.png" alt="Speech-Aware Meeting Summarizer screenshot 2" loading="lazy" />
+            <img src="images/sams2.png" alt="Meeting Summarizer conversation-flow analysis" loading="lazy" />
           </a>
           <a href="images/sams3.png">
-            <img src="images/sams3.png" alt="Speech-Aware Meeting Summarizer screenshot 3" loading="lazy" />
+            <img src="images/sams3.png" alt="Meeting Summarizer speaker timeline" loading="lazy" />
           </a>
         </div>
-        <p>
-          <a href="https://github.com/Tculhane8879/Speech-Aware-Meeting-Summarizer" target="_blank">
-            View Project &rarr;
-          </a>
-        </p>
-      </div>
+      </article>
+    </section>
 
-      <div class="project">
-        <h3>NetworkAnalyzer</h3>
-        <p>
-          Developed a network analysis application for a software systems course, demonstrating
-          system design, backend development, and frontend integration.
-        </p>
-        <p>
-          <strong>Skills:</strong> Java &bull; Vue &bull; TypeScript &bull; Full-Stack Development &bull; System Design
-        </p>
-        <div class="project-screenshots" aria-label="NetworkAnalyzer screenshots">
-          <a href="images/nan1.png">
-            <img src="images/nan1.png" alt="NetworkAnalyzer screenshot 1" loading="lazy" />
-          </a>
-          <a href="images/nan2.png">
-            <img src="images/nan2.png" alt="NetworkAnalyzer screenshot 2" loading="lazy" />
-          </a>
-          <a href="images/nan3.png">
-            <img src="images/nan3.png" alt="NetworkAnalyzer screenshot 3" loading="lazy" />
-          </a>
-          <a href="images/nan4.png">
-            <img src="images/nan4.png" alt="NetworkAnalyzer screenshot 4" loading="lazy" />
-          </a>
+    <section class="skills-section">
+      <div class="section-label">Toolkit</div>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Languages</h3>
+          <p>Python, Java, TypeScript, JavaScript, C++</p>
         </div>
-        <p>
-          <a href="https://github.com/Conava/NetworkAnalyzer" target="_blank">
-            View Project &rarr;
-          </a>
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>AI Car Brand Classification</h3>
-        <p>
-          Built a machine learning model to classify car brands from images using computer vision
-          techniques.
-        </p>
-        <p>
-          <strong>Skills:</strong> Python &bull; Machine Learning &bull; Computer Vision &bull; Image Classification
-        </p>
+        <div>
+          <h3>Backend & Data</h3>
+          <p>FastAPI, Spring Boot, Flask, PostgreSQL, SQLAlchemy, Alembic, Flyway, REST APIs</p>
+        </div>
+        <div>
+          <h3>Frontend</h3>
+          <p>Next.js, React, Vue, HTML, CSS</p>
+        </div>
+        <div>
+          <h3>Engineering</h3>
+          <p>Git, GitHub Actions, Docker, CI/CD, Pytest, Vitest, OpenAPI, Linux</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <p><strong>Languages:</strong> Python, Java, JavaScript, C++</p>
-      <p><strong>Frameworks:</strong> Vue, Spring Boot, Flask</p>
-      <p><strong>Tools:</strong> Git, GitHub, Docker, PostgreSQL, OpenAPI, Linux, VS Code</p>
-      <p><strong>Interests:</strong> backend engineering, AI, full-stack development</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email me at <a href="mailto:thomasculhane95@gmail.com">thomasculhane95@gmail.com</a>.</p>
+    <section class="contact-section">
+      <div>
+        <div class="section-label">Contact</div>
+        <h2>Let’s build something useful.</h2>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:thomasculhane95@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/thomas-culhane-sdsu" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/Tculhane8879" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </section>
   </main>
 
@@ -185,21 +250,27 @@
   <script>
     const lightbox = document.getElementById("image-lightbox");
     const lightboxImage = lightbox.querySelector("img");
+    const closeButton = lightbox.querySelector(".lightbox-close");
+    let previousFocus = null;
+
     const closeLightbox = () => {
       lightbox.classList.remove("is-open");
       lightbox.setAttribute("aria-hidden", "true");
       lightboxImage.src = "";
       lightboxImage.alt = "";
+      if (previousFocus) previousFocus.focus();
     };
 
     document.querySelectorAll(".project-screenshots a").forEach((link) => {
       link.addEventListener("click", (event) => {
         event.preventDefault();
         const image = link.querySelector("img");
+        previousFocus = link;
         lightboxImage.src = link.href;
         lightboxImage.alt = image.alt;
         lightbox.classList.add("is-open");
         lightbox.setAttribute("aria-hidden", "false");
+        closeButton.focus();
       });
     });
 
